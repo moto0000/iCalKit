@@ -18,7 +18,7 @@ public struct Event {
     public var dtstart: Date?
     public var dtend: Date?
 
-    public init(uid: String? = NSUUID().uuidString, dtstamp: Date? = Date()) {
+    public init(uid: String? = UUID().uuidString, dtstamp: Date? = Date()) {
         self.uid = uid
         self.dtstamp = dtstamp
     }
